@@ -1,0 +1,62 @@
+---
+import InstalationLineItem from "./InstalationLineItem.astro"
+---
+
+<ol class="w-full relative border-s border-gray-200 dark:border-gray-700">
+    <InstalationLineItem 
+    item="1"
+    title="Instalar Tailwind CSS"
+    text="Instalar ` tailwindcss ` a través de npm, y crea tu ` tailwind.config.js ` archivo."
+    code=`> npm install -D tailwindcss
+> npx tailwindcss init`
+    titleCode="Terminal"/>
+
+    <InstalationLineItem 
+    item="2"
+    title="Configure sus rutas de plantilla"
+    text="Agregue las rutas a todos sus archivos de plantilla en su ` tailwind.config.js ` archivo."
+    code=`/** @type {import('tailwindcss').Config} */
+module.exports = {
+content: ["./src/**/*.{html,js}"],
+theme: {
+    extend: {},
+},
+plugins: [],
+}`
+    titleCode="tailwind.config.js"/>
+
+    <InstalationLineItem 
+    item="3"
+    title="Agregue las directivas Tailwind a su CSS"
+    text="Añadir el ` @tailwind ` directivas para cada una de las capas de Tailwindants a su archivo CSS principal."
+    code=`@tailwind base;
+@tailwind components;
+@tailwind utilities;`
+    titleCode="scr/input.css"/>
+    
+    <InstalationLineItem 
+    item="4"
+    title="Inicie el proceso de compilación de Tailwind CLI"
+    text="Ejecute la herramienta CLI para escanear sus archivos de plantilla para clases y crear CSS."
+    code=`> npx tailwindcss -i ./src/input.css -o ./src/output.css --watch`
+    titleCode="Terminal"/>
+    
+    <InstalationLineItem 
+    item="5"
+    title="Comience a usar Tailwind en su HTML"
+    text="Agregue su archivo CSS compilado al ` head ` y comience a usar las clases de utilidad de Tailwindics para diseñar su contenido."
+    code=`<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-3xl font-bold underline">
+         Hello world!
+    </h1>
+</body>
+</html>`
+    titleCode="src/index.html"/>
+</ol>

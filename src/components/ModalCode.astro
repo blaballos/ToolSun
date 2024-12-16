@@ -1,0 +1,22 @@
+---
+const { textCode, idCode } = Astro.props
+
+import CopyCode from "./CopyCode.astro"
+---
+
+<div>
+    <input type="checkbox" id={idCode} class="hidden peer" />
+  
+    <div class="fixed z-50 inset-0 flex items-center justify-center bg-black bg-opacity-80 transition-opacity duration-300 opacity-0 pointer-events-none peer-checked:opacity-100 peer-checked:pointer-events-auto">
+    <div class="flex flex-col items-center justify-center gap-y-2">
+        <CopyCode 
+        titleCode="src/index.html"
+        textCode={textCode}/>
+        <div class="flex justify-end space-x-4">
+          <button class="px-4 py-2 bg-gray-100 text-md font-semibold text-gray-700 rounded-lg cursor-pointer hover:bg-gray-300 transition duration-300" onclick={`document.getElementById('${idCode}').checked = false`}>
+            Listo
+          </button>
+    </div>
+    </div>
+  </div>
+  

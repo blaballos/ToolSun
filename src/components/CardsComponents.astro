@@ -1,0 +1,47 @@
+---
+
+const COMPONENTS = [
+  {
+    title: "Badges",
+    subtitle: "40 Elementos",
+    image: "/components-images/about-image.webp",
+    link: "/Elements/Badges"
+  },
+  {
+    title: "Button",
+    subtitle: "25 Elementos",
+    image: "/components-images/about-image.webp",
+    link: "/Elements/Buttons"
+  },
+  {
+    title: "Header",
+    subtitle: "2 components",
+    image: "/components-images/about-image.webp",
+    link: "/Elements/Headers"
+  },
+  {
+    title: "Footer",
+    subtitle: "3 componentes",
+    image: "/components-images/about-image.webp",
+    link: "/Elements/Footers"
+  },
+  
+]
+
+---
+
+<article class="grid grid-cols-4 gap-4 pt-8">
+  {
+    COMPONENTS.map(({title, subtitle, image, link}) => (
+      <a href={link} class="flex flex-col col-span-1 rounded-3xl hover:bg-gray-100/10">
+        <div class="flex flex-col justify-center items-center rounded-2xl py-4">
+          <img src={image} alt="" class="rounded-2xl max-w-xl h-48">
+        </div>
+        <div class="flex flex-col justify-center items-center">
+          <h3 class="text-white text-md font-semibold">{title}</h3>
+          <span class="text-white text-sm opacity-70 pb-2">{subtitle}</span>
+        </div>
+      </a>
+    ))
+  }
+</article>

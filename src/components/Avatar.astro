@@ -1,0 +1,7 @@
+---
+const {  class:className, nombre, link } = Astro.props
+---
+
+<a href={link} class=`${className} inline-flex items-center gap-x-2 text-white text-md" target="_blank" rel="noopener noreferrer"`>
+    <img src="/updates-images/avatar-brandon-laballos.webp" alt=`Fotografía de ${nombre}` class="rounded-full size-8">{nombre}
+</a>

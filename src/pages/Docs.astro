@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import HeroDocs from '../components/HeroDocs.astro';
+import InstalationSection from '../components/InstalationSection.astro';
+---
+<Layout 
+	title='ToolSun - Docs'
+	description='Guía detallada para instalación y configuración de Tailwind CSS asegurando un uso correcto y sin conflictos de nuestros componentes.'>
+	<main>
+        <SectionContainer class="pt-52 pb-16">
+            <HeroDocs />
+        </SectionContainer>
+		<SectionContainer class="pb-40">
+			<InstalationSection />
+		</SectionContainer>
+	</main>
+</Layout>

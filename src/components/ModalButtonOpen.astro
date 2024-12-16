@@ -1,0 +1,9 @@
+---
+const { idCode } = Astro.props
+
+import CodeIcon from "./icons/CodeIcon.astro";
+---
+
+<button class="inline-flex items-center justify-center gap-x-2 px-4 py-2 bg-blue-400 text-sm font-semibold text-gray-100 rounded-lg cursor-pointer hover:bg-blue-500 transition duration-200" onclick={`document.getElementById('${idCode}').checked = true`}>
+      Code <CodeIcon class="size-5"/>
+    </button>

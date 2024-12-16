@@ -1,0 +1,26 @@
+---
+
+import GitHubIcon from "./icons/GitHubIcon.astro"
+
+---
+
+<header class="">
+  <nav class="w-full bg-gray-950/[.65] backdrop-blur-lg backdrop-saturate-50 z-50 fixed inline-flex items-center justify-between p-4 lg:px-8">
+    <div class="hidden lg:flex lg:flex-1">
+      <a href="/" class="-m-1.5 p-1.5 flex flex-row items-center gap-x-2">
+        <img src="/components-images/logo.webp" class="h-8 w-auto" alt="Flowbite Logo" />
+        <span class="text-white text-2xl font-bold">Tool<span class="text-yellow-200">Sun</span></span>
+      </a>
+    </div>
+    <div class="lg:flex lg:gap-x-12">
+      <a href="/Docs" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Docs</a>
+      <a href="/Components" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Componentes</a>
+      <a href="/Updates" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Updates</a>
+    </div>
+    <div class="lg:flex lg:flex-1 lg:justify-end gap-x-2">
+      <a href="#">
+        <GitHubIcon class="text-white opacity-80 size-6 hover:text-gray-300 transition"/>
+      </a>
+    </div> 
+  </nav>
+</header>

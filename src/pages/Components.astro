@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import CardsComponents from '../components/CardsComponents.astro';
+---
+<Layout 
+	title='ToolSun - Componentes'
+	description='Encuentra los mejores componentes personalizados para tu sitio web.'>
+	<main>
+        <SectionContainer class="py-40">
+			<h2 class="text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-orange-200 via-orange-400 to-orange-600 pb-4">Componentes</h2>
+            <span class="text-white text-lg opacity-80 font-semibold pb-48">Selecciona los elementos que más te gusten y diseña sitios web únicos y personalizados.</span>
+			<CardsComponents />
+        </SectionContainer>
+	</main>
+</Layout>
