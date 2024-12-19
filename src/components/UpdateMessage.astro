@@ -5,13 +5,13 @@ const { title, text, date, author, link } = Astro.props
 ---
 
 <div class="flex flex-col max-w-xl">
-    <p class="text-sm text-white opacity-80 pb-2">
+    <p class="text-xs md:text-sm text-white opacity-80 pb-2">
         <time datetime="2024-12-09">{date}</time>
     </p>
-    <h3 class="text-2xl font-semibold text-white pb-2">
+    <h3 class="text-xl md:text-2xl font-semibold text-white pb-2">
         {title}
     </h3>
-    <a href="#" class="text-md text-white opacity-80 text-pretty pb-2">
+    <a href="/Components" class="text-sm md:text-md text-white opacity-80 text-pretty pb-4">
         {text}
     </a>
     <Avatar 

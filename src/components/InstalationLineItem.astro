@@ -4,15 +4,15 @@ const { title, text, item, code, titleCode } = Astro.props;
 import CopyCode from "./CopyCode.astro";
 ---
 
-<li class="mb-10 ms-6 flex flex-row justify-between">
+<li class="mb-10 ms-6 flex flex-col lg:flex-row justify-between space-y-4">
     <div class="max-w-lg">
-        <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-8 ring-black bg-gradient-to-tr from-green-200 to-green-300 text-md font-extrabold text-black">
+        <span class="absolute flex items-center justify-center w-6 h-6 rounded-full -start-3 ring-4 md:ring-8 ring-black bg-gradient-to-tr from-green-200 to-green-300 text-md font-extrabold text-black">
             {item}
         </span>
-        <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{title}</h3>
-        <p class="text-base font-normal text-gray-500 dark:text-gray-400">{text}</p>
+        <h3 class="mb-1 text-lg md:text-xl font-semibold text-gray-900 dark:text-white">{title}</h3>
+        <p class="text-sm md:text-lg font-normal text-gray-500 dark:text-gray-400">{text}</p>
     </div>
-    <div class="w-1/2">
+    <div class="w-full lg:w-1/2">
         <CopyCode textCode={code}
         titleCode={titleCode}/>
     </div>
