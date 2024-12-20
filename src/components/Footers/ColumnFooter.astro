@@ -9,22 +9,22 @@ import GitHubIcon from "../icons/GitHubIcon.astro"
     <footer class="bg-gray-50 w-full max-w-screen-xl mx-auto p-8 rounded-md">
         <div class="flex flex-row justify-around items-start gap-x-4">
             <div>
-                <h3 class="text-black text-lg font-semibold pb-4">Company</h3>
-                <ul class="text-black opacity-70 space-y-1">
+                <h3 class="text-black text-base md:text-lg font-semibold pb-4">Company</h3>
+                <ul class="text-sm text-md:base text-black opacity-70 space-y-1">
                     <li><a href="#" class="hover:underline">Sobre Nosotros</a></li>
                     <li><a href="#" class="hover:underline">Blog</a></li>
                     <li><a href="#" class="hover:underline">Trabajos</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-black text-lg font-semibold pb-4">Soporte</h3>
-                <ul class="text-black opacity-70 space-y-1">
+                <h3 class="text-black text-base md:text-lg font-semibold pb-4">Soporte</h3>
+                <ul class="text-sm text-md:base text-black opacity-70 space-y-1">
                     <li><a href="#" class="hover:underline">Ayuda</a></li>
                 </ul>
             </div>
             <div>
-                <h3 class="text-black text-lg font-semibold pb-4">Legal</h3>
-                <ul class="text-black opacity-70 space-y-1">
+                <h3 class="text-black text-base md:text-lg font-semibold pb-4">Legal</h3>
+                <ul class="text-sm text-md:base text-black opacity-70 space-y-1">
                     <li><a href="#" class="hover:underline">Política de Privacidad</a></li>
                     <li><a href="#" class="hover:underline">Términos y Condiciones</a></li>
                 </ul>
@@ -32,14 +32,14 @@ import GitHubIcon from "../icons/GitHubIcon.astro"
         </div>
         <hr class="border-gray-900 my-8">
         <div class="flex flex-row justify-between items-center">
-            <span class="font-medium text-black">
+            <span class="text-xs md:text-base text-black">
                 © 2024 <a href="#" class="hover:underline">Company</a>. Todos los derechos reservados.
             </span>
-            <ul class="inline-flex gap-x-4 text-black">
-                <li><a href="#"><XIcon class="size-6 hover:scale-110 transition delay-100"/></a></li>
-                <li><a href="#"><InstagramIcon class="size-6 hover:scale-110 transition delay-100"/></a></li>
-                <li><a href="#"><LinkedInIcon class="size-6 hover:scale-110 transition delay-100"/></a></li>
-                <li><a href="#"><GitHubIcon class="size-6 hover:scale-110 transition delay-100"/></a></li>
+            <ul class="grid grid-cols-2 gap-4 md:inline-flex gap-x-2 text-black">
+                <li><a href="#"><XIcon class="size-5 md:size-6 hover:scale-110 transition delay-100"/></a></li>
+                <li><a href="#"><InstagramIcon class="size-5 md:size-6 hover:scale-110 transition delay-100"/></a></li>
+                <li><a href="#"><LinkedInIcon class="size-5 md:size-6 hover:scale-110 transition delay-100"/></a></li>
+                <li><a href="#"><GitHubIcon class="size-5 md:size-6 hover:scale-110 transition delay-100"/></a></li>
             </ul>
         </div>
     </footer>
