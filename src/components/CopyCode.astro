@@ -5,11 +5,11 @@ const { titleCode } = Astro.props;
 import CopyIcon from "./icons/CopyIcon.astro";
 ---
 
-<div class=`relative bg-gray-950 border border-gray-200 rounded-t-2xl`>
+<div class=`relative bg-gray-950 border border-gray-200 rounded-xl`>
     <header class="flex flex-row justify-between items-center py-2 px-2 bg-transparent">
         <h3 class="text-sm text-green-400">{titleCode}</h3>
     </header>
-    <pre class=`flex text-xs text-gray-100 bg-gray-900  py-4 px-4 text-wrap overflow-y-auto max-h-64 overflow-x-auto max-w-7xl`>
+    <pre class=`flex text-xs rounded-b-xl text-gray-100 bg-gray-900 py-4 px-4 text-wrap overflow-y-auto max-h-64 overflow-x-auto max-w-7xl`>
         <code id="code-content">{textCode}</code>
     </pre>
     <button class="absolute right-2 top-0.5 flex justify-center items-center p-2 bg-gray-600 rounded-lg text-white hover:bg-gray-500 transition duration-300" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">
