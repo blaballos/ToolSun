@@ -12,7 +12,7 @@ import CopyIcon from "./icons/CopyIcon.astro";
     <pre class=`flex text-xs rounded-b-xl text-gray-100 bg-gray-900 py-4 px-4 text-wrap overflow-y-auto max-h-64 overflow-x-auto max-w-7xl`>
         <code id="code-content">{textCode}</code>
     </pre>
-    <button class="absolute right-2 top-0.5 flex justify-center items-center p-2 bg-gray-600 rounded-lg text-white hover:bg-gray-500 transition duration-300" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">
+    <button class="absolute right-2 top-0.5 flex justify-center items-center p-2 bg-gray-600 rounded-lg text-white hover:bg-gray-500 transition duration-300" aria-label="Copy code" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">
         <CopyIcon class="size-4"/>
     </button>
 </div>
