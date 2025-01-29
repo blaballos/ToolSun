@@ -3,6 +3,7 @@
 import '@fontsource-variable/onest';
 
 // COMPONENTS
+import { ViewTransitions } from 'astro:transitions';
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro";
 
@@ -21,8 +22,8 @@ const { title, description } = Astro.props;
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/components-images/logo.webp" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<div class="fixed left-0 top-0 -z-10 h-full w-full">
