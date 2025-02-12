@@ -1,24 +1,32 @@
 ---
 import GitHubIcon from "./icons/GitHubIcon.astro"
+import SunIcon from "./icons/SunIcon.astro"
 ---
 
 <header>
-  <nav class="w-full bg-gray-950/[.65] backdrop-blur-lg backdrop-saturate-50 z-50 fixed inline-flex items-center justify-between p-4 lg:px-8">
-    <div class="flex lg:flex-1">
-      <a href="/" class="-m-1.5 p-1.5 flex flex-row items-center gap-x-2">
-        <img src="/components-images/logo.webp" class="h-8 w-auto" alt="ToolSun Logo" />
-        <h2 class="hidden md:flex text-white text-2xl font-bold">Tool<span class="text-yellow-200">Sun</span></h2>
+  <nav class="w-full bg-gray-950/[.65] backdrop-blur-xl backdrop-saturate-50 z-50 fixed inline-flex items-center justify-between p-4 lg:px-8 space-x-4">
+    <div class="flex lg:flex-1 space-x-2 justify-start items-center">
+      <a href="/" class="-m-1.5 p-1.5 flex flex-row items-center">
+        <h2 class="hidden md:flex text-white text-2xl font-extralight">
+          Sun<span class="text-yellow-200">UI</span>
+        </h2>
       </a>
+      <p class="text-gray-200">v0.0.1</p>
+      <a href="/404" class="text-nowrap text-gray-300 text-xs p-2 border border-gray-300 rounded-full font-bold hover:text-gray-400 hover:border-gray-400 transition duration-200">Introducción a SunUI 🚀</a>
     </div>
-    <div class="flex gap-x-6 lg:gap-x-12">
-      <a href="/Docs" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Docs</a>
-      <a href="/Components" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Componentes</a>
-      <a href="/Updates" class="block text-white bg-transparent hover:text-blue-500 transition duration-200">Updates</a>
+    <div class="w-full flex justify-end items-center text-sm text-gray-100 font-semibold gap-x-4 lg:gap-x-4">
+      <a href="/Docs" class="block bg-transparent hover:text-gray-300 transition duration-200">Docs</a>
+      <a href="/Components" class="block bg-transparent hover:text-gray-300 transition duration-200">Componentes</a>
+      <a href="/Updates" class="block bg-transparent hover:text-gray-300 transition duration-200">Updates</a>
     </div>
-    <div class="lg:flex lg:flex-1 lg:justify-end gap-x-2">
-      <a href="https://github.com/blaballos/ToolSun" target="_blank" rel="noopener noreferrer" aria-label="Go to GitHub repository">
-        <GitHubIcon class="text-white opacity-80 size-6 hover:text-gray-300 transition"/>
+    <div class="bg-gray-300 border-none w-[1px] h-7 hidden lg:flex" role="separator" data-orientation="vertical" aria-orientation="vertical"></div>
+    <div class="lg:flex lg:flex-1 lg:justify-end items-center gap-x-2">
+      <a href="https://github.com/blaballos/ToolSun" target="_blank" rel="noopener noreferrer" aria-label="Go to GitHub repository" class="flex items-center justify-center text-gray-300 text-sm p-2 rounded-full border border-gray-300 gap-x-2 hover:text-gray-400 hover:border-gray-400 transition duration-200">
+        <GitHubIcon class="size-5"/>Contrubuir
       </a>
+      <button class="flex items-center justify-center text-gray-300 text-sm p-2 rounded-full border border-gray-300 hover:text-gray-400 hover:border-gray-400 transition duration-200" aria-label="Change theme to page">
+        <SunIcon class="size-5" />
+      </button>
     </div> 
   </nav>
 </header>
