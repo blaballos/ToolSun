@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SectionContainer from '../components/SectionContainer.astro';
 import Avatar from '../components/Avatar.astro';
 import UpdateMessage from '../components/UpdateMessage.astro';
 
@@ -9,43 +8,39 @@ import ArrowIcon from '../components/icons/ArrowIcon.astro';
 <Layout 
 	title='ToolSun - Updates'
 	description='Enterate de todas las novedades, próximmas actualizaciones y más.'>
-	<main class="p-4 lg:p-0">
-        <SectionContainer class="py-32 md:py-44">
-            <article class="flex flex-col lg:flex-row space-y-10 space-x-0 lg:space-y-0 lg:space-x-10">
-				<div class="flex flex-col max-w-xl">
-					<p class="text-white opacity-80 pb-2 md:pb-4">
-						<time datetime="2024-12-09">Diciembre 19, 2024</time>
-					</p>
-					<h3 class="text-3xl md:text-4xl text-pretty font-extrabold bg-clip-text bg-gradient-to-br from-yellow-50 via-yellow-200 to-yellow-400 text-transparent pb-2 md:pb-4">
-						¡Responsive!
-					</h3>
-					<p class="text-md md:text-lg text-white opacity-80 text-pretty pb-2 md:pb-4">
-						¡Ya somos responsive! Hemos optimizado la experiencia de ToolSun para adaptarse a cualquier dispositivo. Ahora podrás explorar nuestros componentes sin importar el tamaño de tu pantalla.
-					</p>
-					<a href="/Components" class="inline-flex items-center text-yellow-100 hover:text-yellow-200 transition duration-300 font-semibold gap-x-2">Ver más <ArrowIcon class="size-4"/></a>
-					<hr class="my-8 md:my-10 border-gray-700">
-					<Avatar 
-					nombre="Laballos Brandon"
-					link="https://www.linkedin.com/in/brandonlaballos/"/>
-				</div>
-				<div class="flex flex-col space-y-5">
-					<UpdateMessage 
-					title="¡Lanzamiento!"
-					text="¡ToolSun está aquí! Ahora podrás diseñar sitios web únicos y atractivos con nuestros componentes personalizados basados en Tailwind CSS. Descubre nuestro catálogo y lleva el diseño de tu página al siguiente nivel."
-					date="Diciembre 16, 2024"
-					author="Laballos Brandon"
-					link="https://www.linkedin.com/in/brandonlaballos/"/>
+	<article class="flex flex-col lg:flex-row space-y-10 space-x-0 lg:space-y-0 lg:space-x-10">
+		<div class="flex flex-col max-w-xl">
+			<p class="text-white opacity-80 pb-2 md:pb-4">
+				<time datetime="2024-12-09">Diciembre 19, 2024</time>
+			</p>
+			<h3 class="text-3xl md:text-4xl text-pretty font-extrabold bg-clip-text bg-gradient-to-br from-yellow-50 via-yellow-200 to-yellow-400 text-transparent pb-2 md:pb-4">
+				¡Responsive!
+			</h3>
+			<p class="text-md md:text-lg text-white opacity-80 text-pretty pb-2 md:pb-4">
+				¡Ya somos responsive! Hemos optimizado la experiencia de ToolSun para adaptarse a cualquier dispositivo. Ahora podrás explorar nuestros componentes sin importar el tamaño de tu pantalla.
+			</p>
+			<a href="/Components" class="inline-flex items-center text-yellow-100 hover:text-yellow-200 transition duration-300 font-semibold gap-x-2">Ver más <ArrowIcon class="size-4"/></a>
+			<hr class="my-8 md:my-10 border-gray-700">
+			<Avatar 
+			nombre="Laballos Brandon"
+			link="https://www.linkedin.com/in/brandonlaballos/"/>
+		</div>
+		<div class="flex flex-col space-y-5">
+			<UpdateMessage 
+			title="¡Lanzamiento!"
+			text="¡ToolSun está aquí! Ahora podrás diseñar sitios web únicos y atractivos con nuestros componentes personalizados basados en Tailwind CSS. Descubre nuestro catálogo y lleva el diseño de tu página al siguiente nivel."
+			date="Diciembre 16, 2024"
+			author="Laballos Brandon"
+			link="https://www.linkedin.com/in/brandonlaballos/"/>
 
-					<hr class="my-10 border-gray-700">
+			<hr class="my-10 border-gray-700">
 
-					<UpdateMessage 
-					title="Próximamente"
-					text="¡Seguimos creciendo! Con el tiempo, vamos a expandir nuestro catálogo de elementos para ofrecerte una amplia variedad de opciones y posibilidades para tus diseños."
-					
-					author="Laballos Brandon"
-					link="https://www.linkedin.com/in/brandonlaballos/"/>
-				</div>
-			</article>
-        </SectionContainer>
-	</main>
+			<UpdateMessage 
+			title="Próximamente"
+			text="¡Seguimos creciendo! Con el tiempo, vamos a expandir nuestro catálogo de elementos para ofrecerte una amplia variedad de opciones y posibilidades para tus diseños."
+			
+			author="Laballos Brandon"
+			link="https://www.linkedin.com/in/brandonlaballos/"/>
+		</div>
+	</article>
 </Layout>

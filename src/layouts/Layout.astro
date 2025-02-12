@@ -2,10 +2,10 @@
 //FONTS
 import '@fontsource-variable/onest';
 
-// COMPONENTS
-import { ViewTransitions } from 'astro:transitions';
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro";
+
+import { ClientRouter } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -23,19 +23,20 @@ const { title, description } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/components-images/logo.webp" />
 		<title>{title}</title>
-		<ViewTransitions />
+		<ClientRouter />
 	</head>
 	<body>
 		<div class="fixed left-0 top-0 -z-10 h-full w-full">
 			<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div></div>
 		</div>
 		<Header />
-		<main>
+		<main class="py-36">
 			<slot />
 		</main>
 		<Footer />
 	</body>
 </html>
+
 <style is:global>
 	body {
 		margin: 0;
