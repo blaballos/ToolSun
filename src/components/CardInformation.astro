@@ -1,0 +1,55 @@
+---
+import PaintIcon from "./icons/PaintIcon.astro"
+import SunIcon from "./icons/SunIcon.astro"
+import BoltIcon from "./icons/BoltIcon.astro"
+
+const ICONS = {
+    PAINT: {
+        icon: PaintIcon,
+    },
+    SUN: {
+        icon: SunIcon,
+    },
+    BOLT: {
+        icon: BoltIcon,
+    },
+}
+
+const CARDS = [
+  {
+    title: "Personalizable",
+    description: "SunUI es altamente customizable, por lo que puedes modificar completamente el diseño y adaptarlo a tus necesidades.",
+    icon: [ICONS.PAINT]
+  },
+  {
+    title: "Modo Claro y Oscuro",
+    description: "Cada componente cuenta con ambos temas para que puedan adaptarse a las preferencias del usuario.",
+    icon: [ICONS.SUN]
+  },
+  {
+    title: "Eficiente",
+    description: "Te permite crear interfaces de forma rápida y sencilla. SunUI es intuitivo, por lo que tardaras poco tiempo en crear tus aplicaciones web.",
+    icon: [ICONS.BOLT]
+  },
+]
+
+---
+
+<article class="grid grid-cols-3 gap-4">
+    {
+      CARDS.map(({title, description, icon}) => (
+        <div class="flex flex-col col-span-1 max-w-xs bg-transparent">
+            <div class="flex gap-x-2 justify-start items-center mb-4">
+                {icon.map((i) => (
+                    <span class="bg-blue-600/30 text-blue-400 rounded-full p-2">
+                        <i.icon class="size-6"/>
+                    </span>
+                ))
+              }
+                <h3 class="text-gray-100 font-semibold text-lg">{title}</h3>
+            </div>
+            <p class="text-gray-400 text-md">{description}</p>
+        </div>
+      ))
+    }
+  </article>
