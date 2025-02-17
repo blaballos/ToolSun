@@ -1,19 +1,37 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HashIcon from "../components/icons/HashIcon.astro";
 ---
 
 <Layout title="Blog - SunUI"
-description="">
-    <section class="flex flex-col justify-center items-center">
-        <div>
-            <h1 class="text-2xl md:text-4xl text-white font-extrabold mb-2">Introducción</h1>
-            <p class="text-gray-400 text-lg font-medium mb-6">¡Bienvenido a la documentación de SunUI!</p>
-            <div class="mb-8">
-                <img src="/components-images/logo.webp" alt="Imágen ilustrativa del logo de SunUI" class="w-[840px] h-[600px] border-none object-fit rounded-xl shadow-lg">
+description="Introducción de SunUI, funcionamiento, tecnologías utilizadas y más...">
+    <section class="flex justify-center">
+        <div class="max-w-3xl">
+            <div class="flex flex-col space-y-6 mb-10">
+                <h1 class="text-2xl md:text-4xl text-white font-extrabold mb-2">Introducción</h1>
+                <p class="text-gray-400 text-lg font-medium mb-6">¡Bienvenido a la documentación de SunUI!</p>
             </div>
-            <h3 class="text-2xl text-white font-semibold mb-2">¿Qué es SunUI?</h3>
-            <h3 class="text-2xl text-white font-semibold mb-2">Cómo funciona SunUI?</h3>
-            <h3 class="text-2xl text-white font-semibold mb-2">¿Qué es Tailwind CSS?</h3> <!--LINK A DOCS A INSTALARLO -->
+            <div class="mb-10 w-full flex justify-center">
+                <img src="/components-images/logo.webp" alt="Imágen ilustrativa del logo de SunUI" class="w-full h-full border-none object-fill rounded-lg shadow-2xl">
+            </div>
+            <div class="w-full flex flex-col space-y-6 mb-10">
+                <h3 class="text-3xl text-white font-semibold">¿Qué es SunUI?</h3>
+                <p class="text-gray-400 text-lg font-medium">SunUI es una biblioteca de componentes altamente personalizables, diseñada para que puedas reutilizarlos fácilmente en tus aplicaciones web. Su enfoque intuitivo te permite crear sitios modernos, atractivos y de alta calidad sin complicaciones.</p>
+                <p class="text-gray-400 text-lg font-medium">Construida sobre Tailwind CSS, SunUI se adapta perfectamente a tus necesidades, ofreciéndote una amplia gama de opciones listas para usar y crear una aplicación web única y llena de estilo.</p>
+            </div>
+            <div class="w-full flex flex-col space-y-6 mb-10">
+                <h3 class="text-3xl text-white font-semibold">¿Cómo funciona SunUI?</h3>
+                <p class="text-gray-400 text-lg font-medium">SunUI te proporciona componentes HTML personalizados y listos para ser utilizados, para que puedas copiarlos e integrarlos fácilmente en tus proyectos. Ahorra tiempo y maximiza tu productividad creando sitios web únicos.</p>
+            </div>
+            <div class="w-full flex flex-col space-y-6 mb-10">
+                <a href="/Docs" class="flex items-center gap-x-2 group text-3xl text-white font-semibold">
+                    ¿Qué es Tailwind CSS?
+                    <span>
+                        <HashIcon class="size-6 text-transparent group-hover:text-gray-300 transition duration-200"/>
+                    </span>
+                </a>
+                <p class="text-gray-400 text-lg font-medium">Tailwind CSS es un framework de CSS que te permite diseñar interfaces de manera rápida y eficiente a través de clases utilitarias. A diferencia de otros frameworks, no establece estilos predefinidos, sino que otorga total libertad para personalizar cada detalle, logrando generar diseños únicos.</p>
+            </div>
         </div>
     </section>
 </Layout>
