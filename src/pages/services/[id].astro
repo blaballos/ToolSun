@@ -1,0 +1,63 @@
+---
+export async function getStaticPaths() {
+  const pages = [
+    {
+      id: 'button',
+      title: 'Button',
+      description: "Permite al usuario interactuar con el sitio web.",
+      about: 'Este componente se utiliza para llevar a cabo una acción en un sitio web.',
+      defaultUse: `Para utilizar el componente, simplemente debes definir el atributo 'text'`
+    },
+    {
+      id: 'badge',
+      title: 'Badge',
+      description: "Componente que muestra un valor en forma de etiqueta.",
+      about: 'Este componente se utiliza para mostrar información relevante a los usuarios como etiquetas, íconos o botones.',
+      defaultUse: ''
+    },
+    {
+      id: 'header',
+      title: 'Header',
+      description: "Permite al usuario navegar por el sitio web.",
+      about: 'Este componente se utiliza para que el usuario pueda navegar dentro del sitio a través de enlaces.',
+      defaultUse: ''
+    },
+  ];
+  return pages.map(({ id, title, description, about, defaultUse }) => {
+    return {
+      params: { id },
+      props: { title, description, about, defaultUse },
+    };
+  });
+}
+const { id } = Astro.params
+const { title, description, about, defaultUse } = Astro.props;
+
+import LayoutComponents from '../../layouts/LayoutComponents.astro';
+import FooterComponents from '../../components/FooterComponents.astro';
+---
+
+<LayoutComponents title=`SunUI - ${id}`
+description=''>
+
+  <div class="p-4 sm:ml-64">
+    <div class="space-y-4 mb-10">
+      <h2 class="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-tr from-orange-200 via-orange-400 to-orange-600 pb-4">{title}</h2>
+      <span class="text-gray-300 text-md md:text-lg font-semibold pb-48">{description}</span>    
+    </div>
+    <div class="space-y-4 mb-10">
+      <h2 class="text-white text-2xl font-semibold">Sobre el componente</h2>
+      <p class="text-gray-300 font-medium text-md">{about}</p>
+    </div>
+    <div class="space-y-4 mb-10">
+      <h2 class="text-white text-2xl font-semibold">Uso básico</h2>
+      <p class="text-gray-300 font-medium text-md">{defaultUse}</p>
+    </div>
+    <div class="space-y-4 mb-10">
+      <p class="text-gray-300 font-medium text-md">El código para <span class="bg-blue-300 p-1 text-xs font-semibold text-blue-600 shadow-xl rounded-md">{title}</span> es el siguiente:</p>
+    </div>
+
+    <FooterComponents />
+  </div>
+
+</LayoutComponents>
