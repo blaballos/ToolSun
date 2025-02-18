@@ -1,0 +1,14 @@
+---
+import Button from "./Button.jsx"
+import CopyCode from "../CopyCode.astro"
+---
+
+<div class="w-full flex flex-col items-center justify-center space-y-4">
+    <div class="w-full flex justify-center items-center">
+        <Button text="Disabled" color="primary" disabled={true} />
+    </div>
+    <div class="w-full">
+        <CopyCode titleCode="src/index.html"
+        textCode=`<Button text="Disabled" color="primary" disabled={true} />`/>
+    </div>
+</div>
