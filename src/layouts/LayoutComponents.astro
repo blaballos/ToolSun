@@ -1,0 +1,179 @@
+---
+//FONTS
+import '@fontsource-variable/onest';
+
+import Header from "../components/Header.astro"
+
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/components-images/logo.webp" />
+		<title>{title}</title>
+		<ClientRouter />
+	</head>
+	<body>
+		<div class="fixed left-0 top-0 -z-10 h-full w-full">
+			<div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[radial-gradient(circle_500px_at_50%_200px,#3e3e3e,transparent)]"></div></div>
+		</div>
+		<Header />
+		<main class=`pt-24 pb-12s w-full mx-auto lg:max-w-7xl`>
+            <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                <span class="sr-only">Open sidebar</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
+                </svg>
+             </button>
+             
+             <aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+                <div class="h-full px-3 py-20 overflow-y-auto bg-black">
+                   <ul class="space-y-2">
+                      <li>
+                         <h3 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white group text-lg font-semibold">
+                            <span class="ms-3 mb-2">Introducción</span>
+                        </h3>
+                        <ul class="ml-10 space-y-2 text-gray-300 text-sm font-medium">
+                            <li>
+                                <a href="/services/" class="hover:text-gray-400 transition duration-200">Introducción</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Principios de Diseño</a>
+                            </li>
+                            <li>
+                                <a href="/services/getStarted" class="hover:text-gray-400 transition duration-200">Empezando</a>
+                            </li>
+                        </ul>
+                      </li>
+                      <li>
+                         <h3 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white group text-lg font-semibold">
+                            <span class="flex-1 ms-3 whitespace-nowrap mb-2">Componentes</span>
+                         </h3>
+                         <ul class="ml-10 space-y-2 text-gray-300 text-sm font-medium">
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Accordion</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Alert</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Avatar</a>
+                            </li>
+                            <li>
+                                <a href="/services/badge" class="hover:text-gray-400 transition duration-200">Badge</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Breadcrumbs</a>
+                            </li>
+                            <li>
+                                <a href="/services/button" class="hover:text-gray-400 transition duration-200">Button</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">ButtonGroup</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Card</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Checkbox</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">CheckboxGroup</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Code</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">DateInput</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Dropdown</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Footer</a>
+                            </li>
+                            <li>
+                                <a href="/services/header" class="hover:text-gray-400 transition duration-200">Header</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Image</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Input</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Link</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Modal</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Popover</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Radio</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Select</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Skeleton</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Slider</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Spinner</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Switch</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Table</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Tabs</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Textarea</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">Tooltip</a>
+                            </li>
+                            <li>
+                                <a href="/" class="hover:text-gray-400 transition duration-200">User</a>
+                            </li>
+                         </ul>
+                      </li>
+                   </ul>
+                </div>
+             </aside>
+             
+             <slot />
+		</main>
+	</body>
+</html>
+
+<style is:global>
+	body {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html {
+		font-family: 'Onest Variable', sans-serif;
+		background: #13151a;
+	}
+</style>
