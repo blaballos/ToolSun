@@ -17,7 +17,7 @@ import CopyIcon from "./icons/CopyIcon.astro";
         </div>
         <div class="flex basis-1/3"></divc>
     </header>
-    <pre class=`flex text-sm text-white/80 leading-5 bg-gray-900 py-4 px-4 text-wrap overflow-y-auto max-h-64 overflow-x-auto max-w-7xl`>
+    <pre class=`flex text-sm text-white/80 leading-5 bg-gray-900 py-4 px-4 text-wrap overflow-y-auto overflow-x-auto max-w-7xl`>
         <code id="code-content">{textCode}</code>
     </pre>
     <button class="absolute right-2 top-0 flex justify-center items-center w-6 h-6 bg-transparent rounded-lg text-white hover:bg-gray-700 transition duration-200" aria-label="Copy code" onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">
