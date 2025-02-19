@@ -4,11 +4,13 @@ import CopyCode from "../CopyCode.astro"
 ---
 
 <div class="w-full flex flex-col items-center justify-center space-y-4">
-    <div class="w-full flex justify-center items-center space-x-2">
-        <Button text="Default" variant="default" />
-        <Button text="Bordered" variant="bordered" />
-        <Button text="Light" variant="light" />
-        <Button text="Complete" variant="complete" />
+    <div class="w-full flex justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
+        <div class="w-full flex justify-center items-center gap-2">
+            <Button text="Default" variant="default" />
+            <Button text="Bordered" variant="bordered" />
+            <Button text="Light" variant="light" />
+            <Button text="Complete" variant="complete" />
+        </div>
     </div>
     <div class="w-full">
         <CopyCode titleCode="src/index.html"

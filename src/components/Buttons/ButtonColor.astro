@@ -4,37 +4,39 @@ import CopyCode from "../CopyCode.astro"
 ---
 
 <div class="w-full flex flex-col items-center justify-center space-y-4">
-    <div class="w-full flex justify-center items-center space-x-2">
-        <Button text="Default" color="default" />
-        <Button text="Primary" color="primary" />
-        <Button text="Secondary" color="secondary" />
-        <Button text="Success" color="success" />
-        <Button text="Warning" color="warning" />
-        <Button text="Danger" color="danger" />
-    </div>
-    <div class="w-full flex justify-center items-center space-x-2">
-        <Button text="Default" color="default" variant="bordered"/>
-        <Button text="Primary" color="primary" variant="bordered"/>
-        <Button text="Secondary" color="secondary" variant="bordered"/>
-        <Button text="Success" color="success" variant="bordered"/>
-        <Button text="Warning" color="warning" variant="bordered"/>
-        <Button text="Danger" color="danger" variant="bordered"/>
-    </div>
-    <div class="w-full flex justify-center items-center space-x-2">
-        <Button text="Default" color="default" variant="light"/>
-        <Button text="Primary" color="primary" variant="light"/>
-        <Button text="Secondary" color="secondary" variant="light"/>
-        <Button text="Success" color="success" variant="light"/>
-        <Button text="Warning" color="warning" variant="light"/>
-        <Button text="Danger" color="danger" variant="light"/>
-    </div>
-    <div class="w-full flex justify-center items-center space-x-2">
-        <Button text="Default" color="default" variant="complete"/>
-        <Button text="Primary" color="primary" variant="complete"/>
-        <Button text="Secondary" color="secondary" variant="complete"/>
-        <Button text="Success" color="success" variant="complete"/>
-        <Button text="Warning" color="warning" variant="complete"/>
-        <Button text="Danger" color="danger" variant="complete"/>
+    <div class="w-full flex flex-col justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
+        <div class="w-full flex justify-center items-center gap-2">
+            <Button text="Default" color="default" />
+            <Button text="Primary" color="primary" />
+            <Button text="Secondary" color="secondary" />
+            <Button text="Success" color="success" />
+            <Button text="Warning" color="warning" />
+            <Button text="Danger" color="danger" />
+        </div>
+        <div class="w-full flex justify-center items-center gap-2">
+            <Button text="Default" color="default" variant="bordered"/>
+            <Button text="Primary" color="primary" variant="bordered"/>
+            <Button text="Secondary" color="secondary" variant="bordered"/>
+            <Button text="Success" color="success" variant="bordered"/>
+            <Button text="Warning" color="warning" variant="bordered"/>
+            <Button text="Danger" color="danger" variant="bordered"/>
+        </div>
+        <div class="w-full flex justify-center items-center gap-2">
+            <Button text="Default" color="default" variant="light"/>
+            <Button text="Primary" color="primary" variant="light"/>
+            <Button text="Secondary" color="secondary" variant="light"/>
+            <Button text="Success" color="success" variant="light"/>
+            <Button text="Warning" color="warning" variant="light"/>
+            <Button text="Danger" color="danger" variant="light"/>
+        </div>
+        <div class="w-full flex justify-center items-center gap-2">
+            <Button text="Default" color="default" variant="complete"/>
+            <Button text="Primary" color="primary" variant="complete"/>
+            <Button text="Secondary" color="secondary" variant="complete"/>
+            <Button text="Success" color="success" variant="complete"/>
+            <Button text="Warning" color="warning" variant="complete"/>
+            <Button text="Danger" color="danger" variant="complete"/>
+        </div>
     </div>
     <div class="w-full">
         <CopyCode titleCode="src/index.html"
