@@ -1,0 +1,72 @@
+---
+import ButtonDefault from '../../components/Buttons/ButtonDefault.astro';
+import ButtonVariant from '../../components/Buttons/ButtonVariant.astro';
+import ButtonSize from '../../components/Buttons/ButtonSize.astro';
+import ButtonColor from '../../components/Buttons/ButtonColor.astro';
+import ButtonRounded from '../../components/Buttons/ButtonRounded.astro';
+import ButtonDisabled from '../../components/Buttons/ButtonDisabled.astro';
+import ButtonCode from '../../components/Buttons/ButtonCode.astro';
+
+import Span from '../SpanColor.astro';
+---
+    <article>
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Uso básico</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para utilizar el componente, simplemente debes definir el atributo <Span text='text'/></p>
+            </div>
+            <ButtonDefault />
+        </div>
+        
+        <div class="space-y-8 mb-12">
+            <div>
+                <p class="text-gray-300 font-medium text-md text-pretty">El código para <Span text='Button'/> es el siguiente:</p>
+            </div>
+            <ButtonCode />
+        </div>
+        
+        <!-- VARIANTES -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Variantes</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para cambiar el estilo del componente, se puede utilizar el atributo <Span text='variant'/>. Este atributo acepta cuatro valores: <Span text='default'/>, <Span text='bordered'/>, <Span text='light'/> y <Span text='complete'/>.</p>
+            </div>
+            <ButtonVariant />
+        </div>
+        
+        <!-- TAMAÑOS -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Tamaños</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para cambiar el tamaño del componente, se puede utilizar el atributo <Span text='size'/>. Este atributo acepta cuatro valores: <Span text='sm'/>, <Span text='md'/>, <Span text='lg'/> y <Span text='xl'/>.</p>
+            </div>
+            <ButtonSize />
+        </div>
+        
+        <!-- COLOR -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Color</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para cambiar el color del componente, se puede utilizar el atributo <Span text='color'/>. Este atributo acepta seis valores: <Span text='default'/>, <Span text='primary'/>, <Span text='secondary'/>, <Span text='success'/>, <Span text='warning'/> y <Span text='danger'/>.</p>
+            </div>
+            <ButtonColor />
+        </div>
+        
+        <!-- ROUNDED -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Rounded</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para cambiar el redondeado del componente, se puede utilizar el atributo <Span text='rounded'/>. Este atributo acepta cuatro valores: <Span text='none'/>, <Span text='sm'/>, <Span text='md'/>, <Span text='lg'/> y <Span text='full'/>.</p>
+            </div>
+            <ButtonRounded />
+        </div>
+        
+        <!-- DISABLED -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Deshabilitado</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para deshabilitar el componente, se puede utilizar el atributo <Span text='disabled={true}'/>.</p>
+            </div>
+            <ButtonDisabled />
+        </div>
+    </article>
