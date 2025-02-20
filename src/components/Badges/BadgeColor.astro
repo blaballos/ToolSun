@@ -1,0 +1,58 @@
+---
+import Badge from "./Badge.jsx"
+import CopyCode from "../CopyCode.astro"
+---
+
+<div class="w-full flex flex-col items-center justify-center space-y-4">
+    <div class="w-full flex justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
+        <div class="w-full flex flex-col justify-center items-center gap-2">
+            <div class="w-full flex justify-center items-center gap-2">
+                <Badge text='Default' color='default' />
+                <Badge text='Primary' color='primary' />
+                <Badge text='Secondary' color='secondary' />
+                <Badge text='Success' color='success' />
+                <Badge text='Warning' color='warning' />
+                <Badge text='Danger' color='danger' />
+            </div>
+            <div class="w-full flex justify-center items-center gap-2">
+                <Badge variant='icon' color='default' />
+                <Badge variant='icon' color='primary' />
+                <Badge variant='icon' color='secondary' />
+                <Badge variant='icon' color='success' />
+                <Badge variant='icon' color='warning' />
+                <Badge variant='icon' color='danger' />
+            </div>
+            <div class="w-full flex justify-center items-center gap-2">
+                <Badge variant='bordered' text='default' color='default' />
+                <Badge variant='bordered' text='primary' color='primary' />
+                <Badge variant='bordered' text='secondary' color='secondary' />
+                <Badge variant='bordered' text='success' color='success' />
+                <Badge variant='bordered' text='warning' color='warning' />
+                <Badge variant='bordered' text='danger' color='danger' />
+            </div>
+        </div>
+    </div>
+    <div class="w-full">
+        <CopyCode titleCode="src/index.html"
+        textCode=`<Badge text='Default' color='default' />
+<Badge text='Primary' color='primary' />
+<Badge text='Secondary' color='secondary' />
+<Badge text='Success' color='success' />
+<Badge text='Warning' color='warning' />
+<Badge text='Danger' color='danger' />
+
+<Badge type='icon' color='default' />
+<Badge type='icon' color='primary' />
+<Badge type='icon' color='secondary' />
+<Badge type='icon' color='success' />
+<Badge type='icon' color='warning' />
+<Badge type='icon' color='danger' />
+
+<Badge type='bordered' text='default' color='default' />
+<Badge type='bordered' text='primary' color='primary' />
+<Badge type='bordered' text='secondary' color='secondary' />
+<Badge type='bordered' text='success' color='success' />
+<Badge type='bordered' text='warning' color='warning' />
+<Badge type='bordered' text='danger' color='danger' />`/>
+    </div>
+</div>
