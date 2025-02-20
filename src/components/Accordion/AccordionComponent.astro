@@ -1,0 +1,56 @@
+---
+import AccordionCode from '../../components/Accordion/AccordionCode.astro';
+import AccordionItemCode from '../../components/Accordion/AccordionItemCode.astro';
+import AccordionDefault from '../../components/Accordion/AccordionDefault.astro';
+import AccordionVariant from '../../components/Accordion/AccordionVariant.astro';
+import AccordionMultiple from '../../components/Accordion/AccordionMultiple.astro';
+import AccordionSubtitle from '../../components/Accordion/AccordionSubtitle.astro';
+import Span from '../SpanColor.astro';
+---
+    <article>
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Uso básico</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para utilizar el componente, simplemente debes definir el atributo <Span text='text'/></p>
+            </div>
+            <AccordionDefault />
+        </div>
+        
+        <div class="space-y-8 mb-12">
+            <div>
+                <p class="text-gray-300 font-medium text-md text-pretty">Y el código para <Span text='AccordionItem'/> es el siguiente:</p>
+            </div>
+            <AccordionItemCode />
+            <div>
+                <p class="text-gray-300 font-medium text-md text-pretty">El código para <Span text='Accordion'/> es el siguiente:</p>
+            </div>
+            <AccordionCode />
+        </div>
+        
+        <!-- SUBTITLE -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Con Subtítulo</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para agregar subtítulos al componente, debes utilizar la propiedad <Span text='subtitle'/>.</p>
+            </div>
+            <AccordionSubtitle />
+        </div>
+
+        <!-- MULTIPLE -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Múltiple</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para tener múltiples elementos abiertos al mismo tiempo, se puede utilizar el atributo <Span text='multiple={true}'/>.</p>
+            </div>
+            <AccordionMultiple />
+        </div>
+        
+        <!-- VARIANTS -->
+        <div class="space-y-6 mb-12">
+            <div class="space-y-4">
+                <h2 class="text-white text-2xl font-semibold">Variantes</h2>
+                <p class="text-gray-300 font-medium text-md text-pretty">Para cambiar el estilo del componente, se puede utilizar el atributo <Span text='styleVariant'/>. Este atributo acepta cuatro valores: <Span text='default'/>, <Span text='light'/>, <Span text='bordered'/> y <Span text='complete'/>.</p>
+            </div>
+            <AccordionVariant />
+        </div>
+    </article>
