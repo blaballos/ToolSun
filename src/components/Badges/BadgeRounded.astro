@@ -6,17 +6,19 @@ import CopyCode from "../CopyCode.astro"
 <div class="w-full flex flex-col items-center justify-center space-y-4">
     <div class="w-full flex justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
         <div class="w-full flex justify-center items-center gap-2">
-            <Badge text='Rounded none' color='secondary' rounded='none' />
-            <Badge text='Rounded sm' color='secondary' rounded='sm' />
-            <Badge text='Rounded md' color='secondary' rounded='md' />
-            <Badge text='Rounded lg' color='secondary' rounded='lg' />
-            <Badge text='Rounded full' color='secondary' rounded='full' />
+            <Badge text='Rounded none' color='primary' rounded='none' />
+            <Badge text='Rounded sm' color='primary' rounded='sm' />
+            <Badge text='Rounded md' color='primary' rounded='md' />
+            <Badge text='Rounded lg' color='primary' rounded='lg' />
+            <Badge text='Rounded full' color='primary' rounded='full' />
         </div>
     </div>
     <div class="w-full">
         <CopyCode titleCode="src/index.html"
-        textCode=`<Badge text='Small' size="sm" />
-<Badge text='Medium' size="md" />
-<Badge text='Large' size="lg" />`/>
+        textCode=`<Badge text='Rounded none' color='primary' rounded='none' />
+<Badge text='Rounded sm' color='primary' rounded='sm' />
+<Badge text='Rounded md' color='primary' rounded='md' />
+<Badge text='Rounded lg' color='primary' rounded='lg' />
+<Badge text='Rounded full' color='primary' rounded='full' />`/>
     </div>
 </div>
