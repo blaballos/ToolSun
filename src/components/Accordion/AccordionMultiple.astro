@@ -1,0 +1,46 @@
+---
+import Accordion from "./Accordion.jsx"
+import CopyCode from "../CopyCode.astro"
+---
+
+<div class="w-full flex flex-col items-center justify-center space-y-4">
+    <div class="w-full flex justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
+        <Accordion
+        items={[
+            {
+            title: 'Accordion 1',
+            content: '1st content to show in the accordion'
+            },
+            {
+            title: 'Accordion 2',
+            content: '2nd content to show in the accordion'
+            },
+            {
+            title: 'Accordion 3',
+            content: '3rd content to show in the accordion'
+            }
+        ]}
+        multiple={true}
+        />
+    </div>
+    <div class="w-full">
+        <CopyCode titleCode="src/index.html"
+        textCode=`<Accordion
+  items={[
+    {
+      title: 'Accordion 1',
+      content: '1st content to show in the accordion'
+    },
+    {
+      title: 'Accordion 2',
+      content: '2nd content to show in the accordion'
+    },
+    {
+      title: 'Accordion 3',
+      content: '3rd content to show in the accordion'
+    }
+  ]}
+  multiple={true}
+/>`/>
+    </div>
+</div>

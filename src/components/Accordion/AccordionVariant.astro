@@ -1,0 +1,163 @@
+---
+import Accordion from "./Accordion.jsx"
+import CopyCode from "../CopyCode.astro"
+---
+
+<div class="w-full flex flex-col items-center justify-center space-y-4">
+    <div class="w-full flex flex-col justify-center items-center bg-gray-200 shadow-xl space-y-4 py-4 px-6 rounded-lg">
+        <div class="w-full justify-center items-center space-y-4">
+            <h2 class="text-black dark:text-white text-xl font-semibold">Default</h2>
+            <Accordion
+            items={[
+                {
+                title: 'Accordion 1',
+                content: '1st content to show in the accordion'
+                },
+                {
+                title: 'Accordion 2',
+                content: '2nd content to show in the accordion'
+                },
+                {
+                title: 'Accordion 3',
+                content: '3rd content to show in the accordion'
+                }
+            ]}
+            styleVariant='default'
+            />
+        </div>
+        <div class="w-full justify-center items-center space-y-4">
+            <h2 class="text-black dark:text-white text-xl font-semibold">Light</h2>
+            <Accordion
+            items={[
+                {
+                title: 'Accordion 1',
+                content: '1st content to show in the accordion'
+                },
+                {
+                title: 'Accordion 2',
+                content: '2nd content to show in the accordion'
+                },
+                {
+                title: 'Accordion 3',
+                content: '3rd content to show in the accordion'
+                }
+            ]}
+            styleVariant='light'
+            />
+        </div>
+        <div class="w-full justify-center items-center space-y-4">
+            <h2 class="text-black dark:text-white text-xl font-semibold">Bordered</h2>
+            <Accordion
+            items={[
+                {
+                title: 'Accordion 1',
+                content: '1st content to show in the accordion'
+                },
+                {
+                title: 'Accordion 2',
+                content: '2nd content to show in the accordion'
+                },
+                {
+                title: 'Accordion 3',
+                content: '3rd content to show in the accordion'
+                }
+            ]}
+            styleVariant='bordered'
+            />
+        </div>
+        <div class="w-full justify-center items-center space-y-4">
+            <h2 class="text-black dark:text-white text-xl font-semibold">Complete</h2>
+            <Accordion
+            items={[
+                {
+                title: 'Accordion 1',
+                content: '1st content to show in the accordion'
+                },
+                {
+                title: 'Accordion 2',
+                content: '2nd content to show in the accordion'
+                },
+                {
+                title: 'Accordion 3',
+                content: '3rd content to show in the accordion'
+                }
+            ]}
+            styleVariant='complete'
+            />
+        </div>
+    </div>
+    <div class="w-full">
+        <CopyCode titleCode="src/index.html"
+        textCode=`<Accordion
+  items={[
+    {
+      title: 'Accordion 1',
+      content: '1st content to show in the accordion'
+    },
+    {
+      title: 'Accordion 2',
+      content: '2nd content to show in the accordion'
+    },
+    {
+      title: 'Accordion 3',
+      content: '3rd content to show in the accordion'
+    }
+  ]}
+  styleVariant='default'
+/>
+
+<Accordion
+  items={[
+    {
+      title: 'Accordion 1',
+      content: '1st content to show in the accordion'
+    },
+    {
+      title: 'Accordion 2',
+      content: '2nd content to show in the accordion'
+    },
+    {
+      title: 'Accordion 3',
+      content: '3rd content to show in the accordion'
+    }
+  ]}
+  styleVariant='light'
+/>
+
+<Accordion
+  items={[
+    {
+      title: 'Accordion 1',
+      content: '1st content to show in the accordion'
+    },
+    {
+      title: 'Accordion 2',
+      content: '2nd content to show in the accordion'
+    },
+    {
+      title: 'Accordion 3',
+      content: '3rd content to show in the accordion'
+    }
+  ]}
+  styleVariant='bordered'
+/>
+
+<Accordion
+  items={[
+    {
+      title: 'Accordion 1',
+      content: '1st content to show in the accordion'
+    },
+    {
+      title: 'Accordion 2',
+      content: '2nd content to show in the accordion'
+    },
+    {
+      title: 'Accordion 3',
+      content: '3rd content to show in the accordion'
+    }
+  ]}
+  styleVariant='complete'
+/>`/>
+    </div>
+</div>
