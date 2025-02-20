@@ -34,6 +34,7 @@ import LayoutComponents from '../../layouts/LayoutComponents.astro';
 import FooterComponents from '../../components/FooterComponents.astro';
 
 import ButtonComponent from '../../components/Buttons/ButtonComponent.astro';
+import BadgeComponent from '../../components/Badges/BadgeComponent.astro';
 ---
 
 <LayoutComponents title=`SunUI - ${title}`
@@ -51,6 +52,7 @@ description=''>
     </div>
 
     {id === 'button' && <ButtonComponent />}
+    {id === 'badge' && <BadgeComponent />}
 
     <FooterComponents />
   </div>
